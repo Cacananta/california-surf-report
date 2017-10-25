@@ -1,26 +1,112 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-}
+  /* * { border: 
+  1px solid red; 
+}   */
+
+ body {
+  background: url("http://www.sandiegoevictionsattorney.com/wp-content/uploads/2016/01/bridges-ocean-bridge-pier-sky-san-diego-coast-nature-clouds-sea-california-beach-wharf-picture-gallery.jpg") no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+} 
 
 .charcoal {
-  background-color: #292E37
+  background-color:  #292E37;
+  padding-bottom: 10px;
+  /* background: linear-gradient(#292E37, transparent); */
 }
 
 .App-title {
-  font-family: 'Ultra', serif;
-  color: darkred;
+  font-size: 100px !important;
+  font-family: 'Cinzel', serif;
+  color: white;
+  margin: 0px;
 }
 
 .subtitle {
-  font-family: 'Original Surfer', cursive;
+  font-family: 'Ultra', serif;
   color: gold;
+  font-size: 35px;
 }
 
 .body-background {
-  height: 100%;
+  width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.header-img {
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+.search-header {
+  background-color: darkgrey !important
+}
+
+footer {
+  color: white;
+  background-color: #292E37;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  text-align: center;
+}
+
+.container {
+  padding-top: 100px;
+}
+
+.test {
+  background-color: #292E37 !important;
+  border-color: #333
+}
+
+.selectcounty {
+  color: gold;
+  margin: 5px 0 5px 0;
+  
+}
+
+.cardonesearch {
+  border: 2px solid #5BC0DE;
+  background-color:  #292E37;
+}
+
+bodyheaders {
+  background-color: #576E86 !important
+}
+
+.card-header {
+  background-color: #576E86;
+  color: gold;
+  
+}
+
+#map {
+  height: 510px;
+  width: 710px;
+}
+
+ .conditions {
+  color: white !important
+} 
+
+.report-pop-up {
+  padding: 15px !important
+}
+
+.surf-conditions {
+  border: 3px solid gold;
+  background-color: #576E86
+
+}
+
+h4.card-title {
+  color: gold;
+}
+
+.condition-list {
+  background-color: #576E86 !important
 }
