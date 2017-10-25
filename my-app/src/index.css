@@ -103,10 +103,37 @@ bodyheaders {
 
 }
 
-h4.card-title {
+h3.card-title {
   color: gold;
 }
 
-.condition-list {
-  background-color: #576E86 !important
+.condition-list li {
+  background-color: #292E37 !important;
+  color: white !important;
+}
+
+.picture-text {
+  color: black !important;
+  text-align: center !important;
+  width: 60px !important
+}
+
+.bummer {
+  color: white !important;
+}
+
+.condition-list li p {
+  margin: auto !important
+}
+
+.warning-label {
+  color: darkred !important
+}
+ 
+.overall {
+  color: gold !important
+} 
+
+h4.card-text {
+  color: white !important
 }

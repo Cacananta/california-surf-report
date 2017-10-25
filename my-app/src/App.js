@@ -3,7 +3,6 @@ import './App.css';
 import Axios from 'axios';
 import SurfSelect from './Surf-Select';
 import SurfMap from './Surf-Map';
-// import SurfConditions from './Surf-Conditions';
 
 class App extends Component {
   constructor(props) {
@@ -13,6 +12,7 @@ class App extends Component {
       surfBreaksByCounty: '',
       surfSpot: '',
       surfConditions: '',
+      surfConditionsShow: false,
       locationError: false,
       mapLocation: {
         zoom: 5,
@@ -72,6 +72,9 @@ class App extends Component {
   combineMethods() {
     this.secondAxiosRequest();
     this.updateMap();
+    this.setState({
+      surfConditionsShow: true
+    })
   }
 
   updateMap() {
@@ -90,10 +93,13 @@ class App extends Component {
       .then((res) => {
         var surfConditions = res.data
         this.setState({
+          locationError: false,
           surfConditions: surfConditions
         })
       }).catch((err) => {
-        
+        this.setState({
+          locationError: true
+        })
       })
   }
 
@@ -111,9 +117,10 @@ class App extends Component {
             surfConditions={this.state.surfConditions}
             combineMethods={this.combineMethods}
             locationError={this.state.locationError}
+            surfConditionsShow={this.state.surfConditionsShow}
           />
           <SurfMap
-            surfBreak={this.state.surfSpot}
+            surfSpot={this.state.surfSpot}
             surfConditions={this.state.surfConditions}
             mapLocation={this.state.mapLocation}
           />

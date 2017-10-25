@@ -14,7 +14,7 @@ class SurfMap extends Component {
           </div>
           <div className="my-3 ml-2 surfmap" id="map">
             <Map 
-            surfBreak={this.props.surfSpot}
+            surfSpot={this.props.surfSpot}
             surfConditions={this.props.surfConditions}
             mapLocation={this.props.mapLocation}
             />

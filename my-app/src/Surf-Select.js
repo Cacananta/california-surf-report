@@ -50,7 +50,7 @@ class SurfSelect extends Component {
             </select>
             <p className="selectcounty">Select Surf Break:</p>
             <select className="col-12 dropdown dropdown-toggle" id="Surfbreak-selector" onChange={this.selectSurfBreak}>
-              {/*POPULATE SURF BREAKS */}
+              <option>Select a Break...</option>
                {this.props.populateSurfBreaks()} 
             </select>
           </div>
@@ -60,6 +60,8 @@ class SurfSelect extends Component {
           <SurfConditions
             surfSpot={this.props.surfSpot}
             surfConditions={this.props.surfConditions}
+            locationError={this.props.locationError}
+            surfConditionsShow={this.props.surfConditionsShow}
           />
         </div>
       </div>
