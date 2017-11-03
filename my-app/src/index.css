@@ -11,7 +11,7 @@
 .charcoal {
   background-color:  #292E37;
   padding-bottom: 10px;
-  /* background: linear-gradient(#292E37, transparent); */
+   background: linear-gradient(#292E37, transparent); 
 }
 
 .App-title {
