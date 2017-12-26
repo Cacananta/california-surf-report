@@ -1,3 +1,17 @@
+# California Surf Report Application
+
+This application was created in 72 hours as part of a curriculum challenge and was a ton of fun! 
+
+Select the county in California you wish to see the surf forecast for. 
+
+After selecting a county, a list of surf spots will populate in the second drop-down menu.
+
+Select your surf spot to see the current day's forecast! Unfortunately, not all surf spots are maintained on a daily basis.
+
+This application uses SpitCast's API. Learn more at www.spitcast.com.
+
+## Using the Application
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>

@@ -45,7 +45,6 @@ class App extends Component {
     var newSurfBreaksByCounty = [...this.state.surfBreaksByCounty];
     var surfBreak = newSurfBreaksByCounty.find(spot =>
       spot.spot_name === surfSpot)
-    // console.log(surfBreak);
     this.setState({ surfSpot: surfBreak });
   }
 
