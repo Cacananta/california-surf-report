@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Axios from 'axios';
+import axios from 'axios';
 import SurfSelect from './Surf-Select';
 import SurfMap from './Surf-Map';
 
@@ -30,14 +30,15 @@ class App extends Component {
   }
 
   componentWillMount() {
-    Axios.get("http://api.spitcast.com/api/spot/all")
+    axios.get(`/api/surflocations`)
       .then((res) => {
+        console.log(res);
         var surfData = res.data
         this.setState({
           surfData: surfData
         })
       }).catch((err) => {
-        console.log(err)
+        console.log("Data did not come back from the server: ", err)
       })
   }
 
@@ -88,7 +89,7 @@ class App extends Component {
 
   secondAxiosRequest() {
     var surfSpotId = this.state.surfSpot.spot_id
-    Axios.get("http://api.spitcast.com/api/spot/forecast/" + surfSpotId + "/")
+    axios.get("http://api.spitcast.com/api/spot/forecast/" + surfSpotId + "/")
       .then((res) => {
         var surfConditions = res.data
         this.setState({

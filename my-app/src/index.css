@@ -3,7 +3,7 @@
 }   */
 
  body {
-  background: url("http://www.sandiegoevictionsattorney.com/wp-content/uploads/2016/01/bridges-ocean-bridge-pier-sky-san-diego-coast-nature-clouds-sea-california-beach-wharf-picture-gallery.jpg") no-repeat center center fixed;
+  background: url("./ocean_beach.jpg") no-repeat center center fixed; 
   background-size: cover;
   height: 100%;
 } 
@@ -85,8 +85,8 @@ bodyheaders {
 }
 
 #map {
-  height: 510px;
-  width: 710px;
+  height: 95%;
+  width: 95%;
 }
 
  .conditions {
