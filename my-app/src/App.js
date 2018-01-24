@@ -89,7 +89,7 @@ class App extends Component {
 
   secondAxiosRequest() {
     var surfSpotId = this.state.surfSpot.spot_id
-    axios.get("http://api.spitcast.com/api/spot/forecast/" + surfSpotId + "/")
+    axios.get(`surfspot/${surfSpotId}/`)
       .then((res) => {
         var surfConditions = res.data
         this.setState({

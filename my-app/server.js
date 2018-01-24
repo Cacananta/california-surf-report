@@ -12,10 +12,17 @@ app.get('/', function(req, res) {
 app.get('/api/surflocations', function(req, res) {
   axios.get('http://api.spitcast.com/api/spot/all')
   .then((response) => {
-    console.log("Server side: ", response);
     res.send(response.data);
   })
   .catch(err => res.send(err.message));
+})
+
+app.get('/surfspot/:surfid', function(req, res) {
+  axios.get(`http://api.spitcast.com/api/spot/forecast/${req.params.surfSpotId}/`)
+  .then((response) => {
+    res.send(response.data)
+  })
+  .catch(err => res.send("Sorry, the data was not successfully received: ", err));
 })
 
 var port = process.env.PORT || 8080
