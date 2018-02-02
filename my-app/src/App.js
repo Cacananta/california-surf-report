@@ -105,8 +105,8 @@ class App extends Component {
 
   render() {
     return (
-      <div className="container">
-        <div className="row align-items-start">
+      <div id="body-container">
+        <div id="component-container">
           <SurfSelect
             onCountyChange={this.onCountyChange}
             onSurfBreakChange={this.onSurfBreakChange}

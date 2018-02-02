@@ -8,11 +8,11 @@ class SurfMap extends Component {
   render() {
     return (
       <div className="col-lg-8">
-        <div className="card cardonesearch">
+        <div id="search-card-two" className="card">
           <div className="bodyheaders">
             <h5 className="card-header">Surf Map:</h5>
           </div>
-          <div className="my-3 ml-2 surfmap" id="map">
+          <div id="map" className="my-3 ml-2 surfmap">
             <Map 
             surfSpot={this.props.surfSpot}
             surfConditions={this.props.surfConditions}

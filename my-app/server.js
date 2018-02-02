@@ -18,8 +18,9 @@ app.get('/api/surflocations', function(req, res) {
 })
 
 app.get('/surfspot/:surfid', function(req, res) {
-  axios.get(`http://api.spitcast.com/api/spot/forecast/${req.params.surfSpotId}/`)
+  axios.get(`http://api.spitcast.com/api/spot/forecast/${req.params.surfid}/`)
   .then((response) => {
+    console.log("Successfully received specific surf spot data")
     res.send(response.data)
   })
   .catch(err => res.send("Sorry, the data was not successfully received: ", err));

@@ -22,19 +22,19 @@ class Map extends Component {
 
   render() {
     return (
-      <GoogleMapReact
-        center={{
-          lat: this.props.mapLocation.lat,
-          lng: this.props.mapLocation.lng
-        }}
-        zoom={this.props.mapLocation.zoom}
-      >
-         <AnyReactComponent
-          lat= {this.props.mapLocation.lat}
-          lng={this.props.mapLocation.lng}
-          text={<p className="picture-text"><img src="https://westernthm.files.wordpress.com/2011/11/surfing1.jpg" height="40px" alt="surfer"></img>{this.props.surfSpot.spot_name}</p>}
-          /> 
-      </GoogleMapReact>
+        <GoogleMapReact
+          center={{
+            lat: this.props.mapLocation.lat,
+            lng: this.props.mapLocation.lng
+          }}
+          zoom={this.props.mapLocation.zoom}
+        >
+          <AnyReactComponent
+            lat= {this.props.mapLocation.lat}
+            lng={this.props.mapLocation.lng}
+            text={<p id="picture-text"><img src="https://westernthm.files.wordpress.com/2011/11/surfing1.jpg" height="40px" alt="surfer"></img>{this.props.surfSpot.spot_name}</p>}
+            /> 
+        </GoogleMapReact>
     );
   }
 }

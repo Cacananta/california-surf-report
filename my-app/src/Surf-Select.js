@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import SurfConditions from './Surf-Conditions';
+import _ from 'lodash';
 
 class SurfSelect extends Component {
   constructor(props) {
@@ -24,13 +25,13 @@ class SurfSelect extends Component {
 
   render() {
     return (
-      <div className="col-lg-4">
-        <div className="card test search-header cardonesearch">
-          <div className="bodyheaders">
-            <h5 className="card-header">Search Surf Report:</h5>
+      <div id="search-surf-container" className="col-lg-4">
+        <div id="search-card"className="card test search-header cardonesearch">
+          <div>
+            <h5 id="search-surf-report" className="card-header">Search Surf Report:</h5>
           </div>
           <div className="p-2">
-            <p className="selectcounty">Select County:</p>
+            <p id="select-county-text">Select County:</p>
             <select className="col-12 dropdown dropdown-toggle" id="County-selector" onChange={this.selectCounty}>
               <option className="dropdown-item">Search by County...</option>
               <option className="dropdown-item">San Diego</option>
@@ -48,7 +49,7 @@ class SurfSelect extends Component {
               <option className="dropdown-item">Humboldt</option>
               <option className="dropdown-item">Del Norte</option>
             </select>
-            <p className="selectcounty">Select Surf Break:</p>
+            <p id="select-surf-break">Select Surf Break:</p>
             <select className="col-12 dropdown dropdown-toggle" id="Surfbreak-selector" onChange={this.selectSurfBreak}>
               {/* <option>Search by Break...</option> */}
                {this.props.populateSurfBreaks()} 

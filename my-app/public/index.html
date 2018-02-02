@@ -9,11 +9,12 @@
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
     -->
+  <link rel="stylesheet" type="text/css" href="../src/index.css">
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
   <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Cinzel:700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Ultra" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" 
     crossorigin="anonymous">
 
   <!--
@@ -29,12 +30,14 @@
 </head>
 
 <div class="App">
-  <header class="charcoal">
-    <h1 class="App-title">CALIFORNIA SURF FORECAST
-      <img class="header-img" src="http://genealogy.ericstoltz.com/wp-content/uploads/sites/3/2014/06/500px-Flag_of_California.svg_.png"
-        alt="California Flag" height="80px" />
-    </h1>
-    <h5 class="subtitle">Your guide to the Golden State's best waves</h5>
+  <header>
+    <div id="header-title">
+      <h1 id="header-h1">CALIFORNIA SURF FORECAST</h1>
+      <img id="flag-img" src="http://genealogy.ericstoltz.com/wp-content/uploads/sites/3/2014/06/500px-Flag_of_California.svg_.png"
+          alt="California Flag"/>
+    </div>
+
+    <h3 id="header-subtitle">Your guide to the Golden State's best waves</h3>
   </header>
 
   <body>
