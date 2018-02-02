@@ -10,7 +10,7 @@ class SurfMap extends Component {
       <div className="col-lg-8">
         <div id="search-card-two" className="card">
           <div className="bodyheaders">
-            <h5 className="card-header">Surf Map:</h5>
+            <h5 id="surf-map-text" className="card-header">Surf Map:</h5>
           </div>
           <div id="map" className="my-3 ml-2 surfmap">
             <Map 

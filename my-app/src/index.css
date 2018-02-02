@@ -1,6 +1,6 @@
-* { border: 
+/* * { border: 
   1px solid red; 
-}   
+}    */
 
  body {
   background: url("./ocean_beach.jpg") no-repeat center center fixed; 
@@ -86,7 +86,15 @@ header {
 #search-card,
 #search-card-two {
   border: 2px solid #5BC0DE;
-  background-color:  #292E37;
+  background-color:  #A9A9A9;
+}
+
+#search-card-two {
+  height: 75vh;
+}
+
+#surf-spot-text {
+  text-align: center;
 }
 
 #search-surf-report {
@@ -109,21 +117,16 @@ header {
 
 #google-map {
   height: 65vh;
-  width: 95%;
+  width: 65vw;
 }
 
-  /* .conditions {
-  color: white !important
-}   */
-
 #report-pop-up {
-  padding: 15px
+  padding: 15px;
 }
 
 .surf-conditions {
   border: 3px solid gold;
-  background-color: #576E86
-
+  background-color: #576E86;
 }
 
 h3.card-title {
