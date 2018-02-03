@@ -90,7 +90,7 @@ header {
 }
 
 #search-card-two {
-  height: 75vh;
+  height: 77vh;
 }
 
 #surf-spot-text {
@@ -107,18 +107,19 @@ header {
 }
 
 #map {
+  margin: 10px 30px 10px 10px ;
   background-color: #292E37;
-  height: 95%;
-  width: 95%;
+  height: 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-content: center;
 }
 
-#google-map {
-  height: 65vh;
-  width: 65vw;
-}
+ #map > div {
+  height: 95%;
+  width: 95%;
+} 
 
 #report-pop-up {
   padding: 15px;
@@ -194,7 +195,6 @@ footer {
   padding: 10px;
   text-align: center;
 }
-
 
   /* {!!this.props.surfData && _.uniq(this.props.surfData.map(a => a.county_name)).map(b => 
   <option className="dropdown-item">{b}</option>)} */

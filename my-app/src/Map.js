@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
 
-
 //https://github.com/istarkov/google-map-react <-- Google Map API repo
 
 // const AnyReactComponent = ({ text }) => <div>{text}</div>;
@@ -9,16 +8,13 @@ import GoogleMapReact from 'google-map-react';
 const AnyReactComponent = ({ text }) => (
   <div style={{
     position: 'relative', color: 'white', background: 'red',
-    height: 30, width: 30, top: -20, left: -30,    
+    height: 30, width: 30, top: -20, left: -20,    
   }}>
     {text}
   </div>
 );
 
 class Map extends Component {
-  // constructor(props) {
-  //   super(props);
-  // }
 
   render() {
     return (

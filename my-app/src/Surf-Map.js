@@ -12,7 +12,7 @@ class SurfMap extends Component {
           <div className="bodyheaders">
             <h5 id="surf-map-text" className="card-header">Surf Map:</h5>
           </div>
-          <div id="map" className="my-3 ml-2 surfmap">
+          <div id="map" className="surfmap">
             <Map 
             surfSpot={this.props.surfSpot}
             surfConditions={this.props.surfConditions}
