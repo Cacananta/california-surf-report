@@ -34,20 +34,8 @@ class SurfSelect extends Component {
             <p id="select-county-text">Select County:</p>
             <select className="col-12 dropdown dropdown-toggle" id="County-selector" onChange={this.selectCounty}>
               <option className="dropdown-item">Search by County...</option>
-              <option className="dropdown-item">San Diego</option>
-              <option className="dropdown-item">Orange County</option>
-              <option className="dropdown-item">Ventura</option>
-              <option className="dropdown-item">Santa Barbara</option>
-              <option className="dropdown-item">San Luis Obispo</option>
-              <option className="dropdown-item">Monterey</option>
-              <option className="dropdown-item">Santa Cruz</option>
-              <option className="dropdown-item">San Mateo</option>
-              <option className="dropdown-item">San Francisco</option>
-              <option className="dropdown-item">Marin</option>
-              <option className="dropdown-item">Sonoma</option>
-              <option className="dropdown-item">Mendocino</option>
-              <option className="dropdown-item">Humboldt</option>
-              <option className="dropdown-item">Del Norte</option>
+              {this.props.surfData && _.uniq(this.props.surfData.map(a => a.county_name)).reverse().map(i =>
+              <option className="dropdown-item">{i}</option>)}
             </select>
             <p id="select-surf-break">Select Surf Break:</p>
             <select className="col-12 dropdown dropdown-toggle" id="Surfbreak-selector" onChange={this.selectSurfBreak}>

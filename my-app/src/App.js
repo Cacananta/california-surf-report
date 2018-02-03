@@ -108,6 +108,7 @@ class App extends Component {
       <div id="body-container">
         <div id="component-container">
           <SurfSelect
+            surfData={this.state.surfData}
             onCountyChange={this.onCountyChange}
             onSurfBreakChange={this.onSurfBreakChange}
             surfBreaksByCounty={this.state.surfBreaksByCounty}
@@ -116,7 +117,7 @@ class App extends Component {
             secondAxiosRequest={this.secondAxiosRequest}
             surfConditions={this.state.surfConditions}
             combineMethods={this.combineMethods}
-            locationError={this.state.locationError}
+            locationError={this.state.locationError} 
             surfConditionsShow={this.state.surfConditionsShow}
           />
           <SurfMap
